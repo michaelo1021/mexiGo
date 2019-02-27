@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>mexiGo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="main.css"  media="screen" />
+    <link rel="stylesheet" href="print.css" media="print" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+  <!-- aplicando una libreria -->
+  <link rel="stylesheet" href="aos.css"  media="screen"/>
+<body>
+
+  <nav>
+    <div class="wrapper">
+
+       <ul>
+         <li><a href="index.html" class="logo">mexiGo</a></li>
+         <li><a href="index.html" class="home link">Home</a></li>
+         <li><a href="blog.html" class="link">Blog</a></li>
+         <li><a href="galeria.html" class="link">Galería</a></li>
+         <li><a href="contacto.html" class="link">Contacto</a></li>
+         <div class="dropdown">
+           <li><a href="#" class="burger dropdownbtn"><img src="burger.png" alt="burger"></a></li>
+           <div class="dropdown-content" style="left:0;">
+             <a href="index.html">Home</a>
+             <a href="blog.html">Blog</a>
+             <a href="galeria.html">Galería</a>
+             <a href="contacto.html">Contacto</a>
+           </div>
+         </div>
+
+       </ul>
+
+    </div>
+  </nav>
+
+  <section id="header-home">
+    <div class="wrapper">
+	  <div class="texto-header-home" data-aos="fade-right" data-aos-duration="700">
+	    <h3>MEXICO</h3>
+	    <h1>CELEBRACIÓN<br>DÍA DE MUERTOS</h1>
+		<p>Vive desde dentro esta fantástica fiesta del día de muertos en la ciudad de Mexico</p>
+		<a href="contacto.html" class="button"> <button class="button2">CONTACT ME</button></a>
+	  </div>
+	  <img src="ilustracion.png" alt="ilustracion" data-aos="zoom-in-up" data-aos-duration="800">
+	</div>
+  </section>
+
+  <section id="blog-home">
+    <div class="wrapper">
+	  <div class="texto-blog-home">
+	    <h3>b l o g</h3>
+		<h1>Últimos posts</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+		ever since the 1500s, when an unkno</p>
+	  </div>
+	  <div class="conteiner-cartas-blog-home">
+	    <a href="blog.html" ><div class="cartas-blog-home" data-aos="zoom-in-up" data-aos-duration="800">
+		  <img src="foto1.png" alt="foto 1">
+		  <h3>22 ENE 2019     MEX</h3>
+		  <h2>El Día de Muertos<br>en Mexico es<br>mucho mas de lo</h2>
+		  <p>Leer Mas</p>
+		</div></a>
+	     <a href="blog.html" ><div class="cartas-blog-home" data-aos="zoom-in-up" data-aos-duration="800">
+		  <img src="foto2.png" alt="foto 2">
+		  <h3>22 ENE 2019     MEX</h3>
+		  <h2>El Día de Muertos<br>en Mexico es<br>mucho mas de lo</h2>
+		  <p>Leer Mas</p>
+		</div></a>
+		 <a href="blog.html" ><div class="cartas-blog-home carta3" data-aos="zoom-in-up" data-aos-duration="800">
+		  <img src="foto3.png" alt="foto 3">
+		  <h3>22 ENE 2019     MEX</h3>
+		  <h2>El Día de Muertos<br>en Mexico es<br>mucho mas de lo</h2>
+		  <p>Leer Mas</p>
+		</div></a>
+	  </div>
+	</div>
+  </section>
+
+ <section id="newsletter-home">
+   <div class="wrapper">
+     <form>
+	  Subscribe to our newsletter<input type="text" name="newsletter" placeholder="freebes@mexigo.com..">
+	  <input type="submit" value="Subscribe">
+	 </form>
+   </div>
+ </section>
+
+ <section id="footer-home">
+   <div class="wrapper">
+     <p>Copyright mexGo.co 2019 all rights reserved</p>
+	 <ul>
+	   <li>
+	     <a href="#">Press</a>
+		 <a href="#">Privacy</a>
+		 <a href="contacto.html">Contact</a>
+	   </li>
+	 </ul>
+   </div>
+ </section>
+<!-- aplicando una libreria -->
+ <script src="aos.js"></script>
+ <script>
+   AOS.init({
+     easing: 'ease-in-out-sine'
+   });
+ </script>
+
+</body>
+</html>

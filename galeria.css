@@ -1,0 +1,304 @@
+body {
+  background: white;
+  font-size: 15px;
+  line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F5F5F5;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  text-align: center;
+}
+
+.dropdown-content a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 12px 16px;
+  color: #2D2D2D;
+  display: block;
+  text-decoration: none;
+
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #6868FC;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+nav {
+	width: 100%;
+	height: 87px;
+	background-color: white;
+	margin-top: -15px;
+}
+
+nav ul {
+  display: flex;
+
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a{
+  color: #2D2D2D;
+  display: block;
+  text-decoration: none;
+  padding: 35px 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.burger {
+  display: none;
+}
+
+.home {
+  color: #6868FC;
+}
+
+nav li a:hover {
+  color: #FF6B00;
+}
+
+li:first-child {
+	margin-right: auto;
+
+}
+
+li:first-child a {
+	padding: 11px 0;
+  margin-left: -35px;
+}
+
+.logo {
+	font-family: 'Roboto', sans-serif;
+	font-size: 41px;
+	text-transform: none;
+	font-weight: 400;
+}
+
+#cajas-galeria {
+  margin-top: 30px;
+}
+
+#cajas-galeria .wrapper {
+	display: flex;
+	justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+#cajas-galeria a {
+	text-decoration: none;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+#cajas-galeria a:hover {
+	transform: translateY(-10px);
+
+}
+
+.cartas-galeria  {
+	width: 540px;
+	height: 540px;
+	background-color: white;
+	box-shadow: 20px 20px 20px -15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.cartas-galeria h2 {
+font-size: 30px;
+font-weight: 600;
+color: #2D2D2D;
+padding-left: 20px;
+margin-top: 0;
+padding-top: 15px;
+}
+
+.cartas-galeria p {
+font-size: 15px;
+font-weight: 400;
+color: #6767FC;
+padding-left: 20px;
+margin-top: -25px;
+}
+
+.hover {
+  width: 541px;
+  height: 426px;
+  opacity: 0;
+  background: linear-gradient(45deg, rgba(107,107,255,1) 0%, rgba(0,0,74,1) 100%);
+  position: absolute;
+  transition: all 0.9 easy;
+}
+
+.hover p {
+  color: white;
+font-size: 50px;
+font-weight: 800;
+margin-top: 175px;
+margin-left: 130px;
+  transition: all 0.9 easy;
+}
+
+.hover:hover {
+  opacity: 0.8;
+}
+
+#titulo-galeria p {
+  color: #6767FC;
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 40px;
+}
+
+#titulo-galeria h1 {
+  color: #2D2D2D;
+  font-size: 50px;
+  line-height: 61px;
+  font-weight: 800;
+  margin-top: -5px;
+  margin-bottom: 70px;
+}
+
+
+
+#footer-home {
+	margin-top: 65px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#footer-home li {
+    list-style: none;
+	margin-top: -5px;
+}
+
+#footer-home li a {
+	color: #6767FC;
+	text-decoration: none;
+	padding: 0 20px;
+}
+
+
+/* comenzamos con los @media
+1150px */
+
+
+@media only screen and (max-width: 1150px){
+  .wrapper {
+    width: 90%;
+  }
+
+  #cajas-galeria .wrapper {
+  	justify-content: center;
+
+  }
+
+}
+
+/* 600px */
+
+@media only screen and (max-width: 600px){
+
+#titulo-galeria h1 {
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 50px;
+}
+
+
+#header-home img {
+  margin: 12% auto;
+  float: none;
+  width: 95%;
+  height: auto;
+  display: block;
+}
+
+
+.cartas-galeria  {
+	width: 270px;
+	height: 270px;
+
+	box-shadow: 10px 10px 10px -8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.cartas-galeria h2 {
+font-size: 15px;
+padding-left: 10px;
+margin-top: 0;
+padding-top: 0;
+}
+
+.cartas-galeria p {
+font-size: 13px;
+padding-left: 10px;
+margin-top: -12.5px;
+}
+
+.hover {
+  width: 270.5px;
+  height: 213px;
+  background: linear-gradient(45deg, rgba(107,107,255,1) 0%, rgba(0,0,74,1) 100%);
+}
+
+#cajas-galeria img {
+  width: 270px;
+  height: 213px;
+}
+
+.hover p {
+font-size: 36px;
+font-weight: 800;
+margin-top: 75px;
+margin-left: 40px;
+}
+
+nav {
+	height: 70px;
+	margin-top: -15px;
+}
+
+.link {
+  display: none;
+}
+
+
+.burger {
+  display: block;
+  margin-top: 17px;
+  padding-right: 5px;
+}
+
+.logo {
+  font-size: 34px;
+}
+
+
+}
